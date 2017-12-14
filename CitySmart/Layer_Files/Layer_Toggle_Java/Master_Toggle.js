@@ -332,6 +332,35 @@ $(document).ready(function(){
 
 
 
+//FTAA Water Grid
+
+$(document).ready(function(){
+
+//If there are multiple layers being activated, put the zoom function in the first layer activation marked below
+
+
+//Put the name of the switch's id in the "on" function
+    $(document).on("click","#FTAA_Water_Grid", function(){
+
+        //Put the name of the layer in the "find" function
+        Layer_Number = Find("water1_FTAA");
+
+
+
+
+        if (wwd.layers[Layer_Number].enabled === true) {
+            wwd.layers[Layer_Number].enabled = false}
+
+        //Put the zoom function in the first enabling layer
+
+        else {wwd.layers[Layer_Number].enabled = true; layerManager.goToAnimator.goTo(new WorldWind.Position(41.45225,-74.43890, 2500));}
+
+
+
+
+    })});
+
+
 
 //FTAA Water Test: Ammonium
 /*

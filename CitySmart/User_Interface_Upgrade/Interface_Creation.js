@@ -1,10 +1,10 @@
 var temporaryCountryValue = -1;
 
-var countryString = `
+var countryString = '
     <p><label>Country</label><select id="myListCountry">
     <option value="-1">-Select a Country-</option>
     <option value="-2">All Layers</option>
-`;
+';
 
 
 var cityString =`
