@@ -353,7 +353,7 @@ $(document).ready(function(){
 
         //Put the zoom function in the first enabling layer
 
-        else {wwd.layers[Layer_Number].enabled = true; layerManager.goToAnimator.goTo(new WorldWind.Position(41.45225,-74.43890, 2500));}
+        else {wwd.layers[Layer_Number].enabled = true; layerManager.goToAnimator.goTo(new WorldWind.Position(41.45225,-74.43890, 1500));}
 
 
 
